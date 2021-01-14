@@ -1,0 +1,28 @@
+{
+  "id": "235b9d41-358d-437e-b810-bef9ed4c37d4",
+  "name": "Prodware - Advanced Sales Price Worksheet",
+  "publisher": "Prodware ES",
+  "version": "1.0.0.1",
+  "brief": "Advanced Sales Price Worksheet",
+  "description": "Advanced Sales Price Worksheet",
+  "privacyStatement": "https://www.prodwaregroup.com/es-es/",
+  "EULA": "https://www.prodwaregroup.com/es-es/",
+  "help": "https://www.prodwaregroup.com/es-es/",
+  "url": "https://www.prodwaregroup.com/es-es/",
+  "logo": "logo/prodware.png",
+  "dependencies": [
+  ],
+  "screenshots": [],
+  "platform": "16.0.0.0",
+  "application": "16.0.0.0",
+  "idRanges": [
+    {
+      "from": 78900,
+      "to": 78949
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://AdvSalesPriceWS.com/help/",
+  "showMyCode": true,
+  "runtime": "5.3",
+  "features": [ "TranslationFile"]
+}

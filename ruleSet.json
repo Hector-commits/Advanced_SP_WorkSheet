@@ -1,0 +1,27 @@
+{
+    "name": "BC",
+    "description": "Rules",
+    "generalAction": "Hidden",
+    "rules": [
+        {
+            "id": "AA0214",
+            "action": "Hidden",
+            "justification": "Not possible to hide"
+        },        {
+            "id": "AA0218",
+            "action": "Hidden",
+            "justification": "Not possible to hide"
+        },      
+        {
+            "id": "AA0470",
+            "action": "Hidden",
+            "justification": "Not possible to hide"
+        },
+        {
+            "id": "AS0084",
+            "action": "Hidden",
+            "justification": "Not possible to hide"
+        }
+
+    ]
+}
