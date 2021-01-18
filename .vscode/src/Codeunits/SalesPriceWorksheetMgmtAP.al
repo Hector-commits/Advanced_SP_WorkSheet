@@ -170,6 +170,7 @@ codeunit 78900 "Sales Price Worksheet Mgmt AP"
     [EventSubscriber(ObjectType::Report, Report::"Implement Price Change", 'OnAfterCopyToSalesPrice', '', false, false)]
     local procedure R_7053_OnAfterCopyToSalesPrice(var SalesPrice: Record "Sales Price"; SalesPriceWorksheet: Record "Sales Price Worksheet")
     var
+        Item: Record Item;
         NewSalesPrice: Record "Sales Price";
     begin
         /*New assignmets*/
@@ -181,12 +182,13 @@ codeunit 78900 "Sales Price Worksheet Mgmt AP"
             SalesPriceWorksheet."New Price Calculation"::"Unit Cost":
                 begin
                     SalesPrice."Reference Cost" := SalesPriceWorksheet."Unit Cost";
-                    SalesPrice."Cost Ref. Unit of Measure" := SalesPriceWorksheet."Purch. Unit of Measure";
+                    if Item.Get(SalesPriceWorksheet."Item No.") then
+                        SalesPrice."Cost Ref. Unit of Measure" := Item."Base Unit of Measure";
                 end;
             SalesPriceWorksheet."New Price Calculation"::"Purchase Price":
                 begin
                     SalesPrice."Reference Cost" := SalesPriceWorksheet."Purchase Price";
-                    SalesPrice."Cost Ref. Unit of Measure" := SalesPrice."Unit of Measure Code";
+                    SalesPrice."Cost Ref. Unit of Measure" := SalesPriceWorksheet."Purch. Unit of Measure";
                 end;
             SalesPriceWorksheet."New Price Calculation"::Free:
                 begin
