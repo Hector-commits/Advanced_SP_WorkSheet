@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es-ES" original="Advanced Sales Price Worksheet">
+    <body>
+      <group id="body">
+        <trans-unit id="Report 3826454501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start/Expire Sales Prices</source>
+          <target>Iniciar/Caducar tarifas</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Start/Expire Sales Prices AP - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3826454501 - Control 2545646732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Starting Date</source>
+          <target>Fecha inicial nueva tarifa</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Start/Expire Sales Prices AP - Control newStartingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3826454501 - Control 3496503505 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expiration date</source>
+          <target>Fecha final tarifa existente</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Start/Expire Sales Prices AP - Control expirationDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3826454501 - Method 2973772424 - NamedType 4166835028" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The field New Starting Date or Expiration Date are mandatory.</source>
+          <target>Debe cubrir al menos una fecha.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Start/Expire Sales Prices AP - Method checkDateCorrection - NamedType datesMandatory</note>
+        </trans-unit>
+        <trans-unit id="Report 3826454501 - Method 2973772424 - NamedType 738231842" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting date cannot be before expiration date (of the existing sales price).</source>
+          <target>Fecha inicial no puede ser anterior a la fecha de caducidad de la antigua tarifa.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Start/Expire Sales Prices AP - Method checkDateCorrection - NamedType checkDatesOnProc</note>
+        </trans-unit>
+        <trans-unit id="Report 3826454501 - Method 2973772424 - NamedType 1002206387" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting date %1 cannot be after expiration date %2 for %3-%4-%5.</source>
+          <target>Fecha inicial %1 no puede ser posterior a la fecha final %2 para %3-%4-%5.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Start/Expire Sales Prices AP - Method checkDateCorrection - NamedType checkDates</note>
+        </trans-unit>
+        <trans-unit id="Report 1397604924 - ReportDataItem 2725149570 - Method 72583909 - NamedType 2795911102" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Please populate valid dates.</source>
+          <target>Por favor, cubra fechas válidas.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Suggest Cust. Price Group AP - ReportDataItem Customer Price Group - Method OnPreDataItem - NamedType populateDateError</note>
+        </trans-unit>
+        <trans-unit id="Report 1397604924 - Control 1011471837 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cust. Price Group Filter</source>
+          <target>Filtro Grupo Precio Cliente</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Suggest Cust. Price Group AP - Control CustPriceGroupFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1397604924 - Control 475800726 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase price calculation date</source>
+          <target>Fecha cálculo tarifa compra</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Suggest Cust. Price Group AP - Control purchasePriceDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1397604924 - Control 475800726 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is the reference data which is going to be used as a reference to find a valid purchase price.</source>
+          <target>Esta fecha se usará como referencia para encontrar una tarifa de compra válida.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Suggest Cust. Price Group AP - Control purchasePriceDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1397604924 - Control 4142888737 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prices open on date</source>
+          <target>Fecha vigencia tarifa</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Suggest Cust. Price Group AP - Control openPricesDateCtrl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1397604924 - Control 4142888737 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Data used as a reference to search for open sales price at the specified date. The system will only retrieve open sales prices at the date specified.</source>
+          <target>Fecha de referencia para buscar tarifas de venta abiertas a dicha fecha. Sólo se recuperarán tarifas de venta abiertas en la fecha de vigencia.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Suggest Cust. Price Group AP - Control openPricesDateCtrl - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1397604924 - Control 2417218739 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Retrieve items without sales prices</source>
+          <target>Recuperar productos sin tarifa de venta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Suggest Cust. Price Group AP - Control retrieveItemsWithoutSalesPrice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1397604924 - Control 4237478475 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Replace lines</source>
+          <target>Reemplazar líneas</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Suggest Cust. Price Group AP - Control replaceLines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1397604924 - Control 4237478475 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If there were previously inserted lines which match with new calculated ones, these will be removed before a new insertion. In not enabled and there are matching lines, the system will retrieve an error.</source>
+          <target>Si previamente se han insertado líneas que coinciden con los nuevos cálculos, se eliminarán para su posterior inserción. Si no se marca este check y existen líneas coincidentes el sistema dara un error.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Suggest Cust. Price Group AP - Control replaceLines - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1397604924 - NamedType 3113193380" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processing...</source>
+          <target>Procesando...</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Suggest Cust. Price Group AP - NamedType ProcessingMessage</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 431179550 - Property 2019332006" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 888136877">
+          <source>New,Process,Report,Prices</source>
+          <target>Nuevo,Procesar,Informar,Precios</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Price Worksheet AP - Property PromotedActionCategories</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 431179550 - Action 4211859158 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 888136877">
+          <source>Suggest customer price group</source>
+          <target>Sugerir precio grupo cliente</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Price Worksheet AP - Action customSuggestPrice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 431179550 - Action 454962783 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 888136877">
+          <source>Start/Expire Sales Prices</source>
+          <target>Iniciar/Caducar tarifas</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Price Worksheet AP - Action expireSalesPrices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 431179550 - Action 1167061642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 888136877">
+          <source>Prices</source>
+          <target>Precios</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Price Worksheet AP - Action Prices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 431179550 - Action 2957872163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 888136877">
+          <source>Sales Prices</source>
+          <target>Precios Venta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Price Worksheet AP - Action Sales_Prices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 431179550 - Action 2033306735 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 888136877">
+          <source>Purchase Prices</source>
+          <target>Precios Compra</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Price Worksheet AP - Action Purchase Prices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 431179550 - Action 1583457540 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 888136877">
+          <source>Line Discounts Purchases</source>
+          <target>Descuentos línea compra</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Price Worksheet AP - Action Line Discounts Purchases - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 1527594213 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>Vendor No.</source>
+          <target>Nº Proveedor</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field Vendor No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 117486782 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>Purchase Price Date</source>
+          <target>Fecha cálculo tarifa compra</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field Purchase Price Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 3105979010 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>Purchase Price</source>
+          <target>Tarifa de compra</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field Purchase Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 381961415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>Unit Cost</source>
+          <target>Coste unitario</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field Unit Cost - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 231256778 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>% Margin</source>
+          <target>% Margen</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field Margin - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 3284829164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>New Price Calculation</source>
+          <target>Cálculo nuevo precio</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field New Price Calculation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 3284829164 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>Purchase Price,Unit Cost,Free</source>
+          <target>Tarifa de compra,Coste unitario,Libre</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field New Price Calculation - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 55737852 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>New Starting Date</source>
+          <target>Nueva fecha inicio</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field New Starting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 1660815199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>Purch. Unit of Measure</source>
+          <target>Unidad medida compra</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field Purch. Unit of Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 1741495258 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>Open Prices Date</source>
+          <target>Fecha vigencia tarifa</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field Open Prices Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 4045001642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>Sales Price Exist</source>
+          <target>Existe tarifa venta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field Sales Price Exist - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 431179550 - Field 3056944571 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 888136877">
+          <source>Item Description 2</source>
+          <target>Descripción producto 2</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price Worksheet AP - Field Item Description 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 553235904 - Field 231256778 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2725149570">
+          <source>Margin</source>
+          <target>% Margen</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cust. Price Group AP - Field Margin - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1813491816 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2243515271">
+          <source>Description</source>
+          <target>Descripción</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price AP - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1813491816 - Field 47657272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2243515271">
+          <source>Description 2</source>
+          <target>Descripción 2</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price AP - Field Description 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1813491816 - Field 3284829164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2243515271">
+          <source>New Price Calculation</source>
+          <target>Cálculo nuevo precio</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price AP - Field New Price Calculation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1813491816 - Field 3284829164 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2243515271">
+          <source>Purchase Price,Unit Cost,Free</source>
+          <target>Tarifa de compra,Coste unitario,Libre</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price AP - Field New Price Calculation - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1813491816 - Field 3480729724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2243515271">
+          <source>Reference Cost</source>
+          <target>Coste de referencia</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price AP - Field Reference Cost - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1813491816 - Field 1028353397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2243515271">
+          <source>Cost Ref. Unit of Measure</source>
+          <target>Ud. Medida Coste referencia</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Price AP - Field Cost Ref. Unit of Measure - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

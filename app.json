@@ -1,6 +1,6 @@
 {
   "id": "235b9d41-358d-437e-b810-bef9ed4c37d4",
-  "name": "Prodware - Advanced Sales Price Worksheet",
+  "name": "Advanced Sales Price Worksheet",
   "publisher": "Prodware ES",
   "version": "1.0.0.1",
   "brief": "Advanced Sales Price Worksheet",
@@ -9,12 +9,23 @@
   "EULA": "https://www.prodwaregroup.com/es-es/",
   "help": "https://www.prodwaregroup.com/es-es/",
   "url": "https://www.prodwaregroup.com/es-es/",
-  "logo": "logo/prodware.png",
+  "logo": "logo/AdvSalesPriceWS.jpg",
   "dependencies": [
+    {
+      "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "publisher": "Microsoft",
+      "name": "System Application",
+      "version": "16.5.15897.15953"
+    },
+    {
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "publisher": "Microsoft",
+      "name": "Base Application",
+      "version": "16.5.15897.15953"
+    }
   ],
   "screenshots": [],
-  "platform": "16.0.0.0",
-  "application": "16.0.0.0",
+  "platform": "16.0.15884.15941",
   "idRanges": [
     {
       "from": 78900,
@@ -23,6 +34,6 @@
   ],
   "contextSensitiveHelpUrl": "https://AdvSalesPriceWS.com/help/",
   "showMyCode": true,
-  "runtime": "5.3",
+  "runtime": "5.0",
   "features": [ "TranslationFile"]
 }
