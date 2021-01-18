@@ -3,7 +3,7 @@
 /.vscode/launch.json
 /.vscode/.alcache/
 .alpackages/
-.vscode/
+##.vscode/
 *.app
 rad.json
 ## Ignore Visual Studio temporary files, build results, and
