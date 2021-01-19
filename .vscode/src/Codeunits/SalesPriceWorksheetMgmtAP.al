@@ -170,36 +170,13 @@ codeunit 78900 "Sales Price Worksheet Mgmt AP"
     [EventSubscriber(ObjectType::Report, Report::"Implement Price Change", 'OnAfterCopyToSalesPrice', '', false, false)]
     local procedure R_7053_OnAfterCopyToSalesPrice(var SalesPrice: Record "Sales Price"; SalesPriceWorksheet: Record "Sales Price Worksheet")
     var
-        Item: Record Item;
         NewSalesPrice: Record "Sales Price";
     begin
-        /*New assignmets*/
-        SalesPriceWorksheet.CalcFields("Item Description", "Item Description 2");
-        SalesPrice.Description := SalesPriceWorksheet."Item Description";
-        SalesPrice."Description 2" := SalesPriceWorksheet."Item Description 2";
-        SalesPrice."New Price Calculation" := SalesPriceWorksheet."New Price Calculation";
-        case SalesPriceWorksheet."New Price Calculation" of
-            SalesPriceWorksheet."New Price Calculation"::"Unit Cost":
-                begin
-                    SalesPrice."Reference Cost" := SalesPriceWorksheet."Unit Cost";
-                    if Item.Get(SalesPriceWorksheet."Item No.") then
-                        SalesPrice."Cost Ref. Unit of Measure" := Item."Base Unit of Measure";
-                end;
-            SalesPriceWorksheet."New Price Calculation"::"Purchase Price":
-                begin
-                    SalesPrice."Reference Cost" := SalesPriceWorksheet."Purchase Price";
-                    SalesPrice."Cost Ref. Unit of Measure" := SalesPriceWorksheet."Purch. Unit of Measure";
-                end;
-            SalesPriceWorksheet."New Price Calculation"::Free:
-                begin
-                    SalesPrice."Reference Cost" := 0;
-                    SalesPrice."Cost Ref. Unit of Measure" := '';
-                end;
-        end;
-
-
-        IF SalesPriceWorksheet."New Starting Date" = 0D THEN
+        /*If we have "New Starting Date" we need to create a new Sales Price*/
+        IF SalesPriceWorksheet."New Starting Date" = 0D then begin
+            populateCustomSalesPriceFields(SalesPrice, SalesPriceWorksheet);
             EXIT;
+        end;
 
         SalesPriceWorksheet.CALCFIELDS("Sales Price Exist");
         IF NOT SalesPriceWorksheet."Sales Price Exist" THEN
@@ -222,9 +199,39 @@ codeunit 78900 "Sales Price Worksheet Mgmt AP"
         NewSalesPrice."Allow Line Disc." := SalesPriceWorksheet."Allow Line Disc.";
         NewSalesPrice."Allow Invoice Disc." := SalesPriceWorksheet."Allow Invoice Disc.";
         NewSalesPrice."VAT Bus. Posting Gr. (Price)" := SalesPriceWorksheet."VAT Bus. Posting Gr. (Price)";
+        populateCustomSalesPriceFields(NewSalesPrice, SalesPriceWorksheet);
         IF NewSalesPrice."Unit Price" <> 0 THEN
             IF NOT NewSalesPrice.INSERT(TRUE) THEN
                 NewSalesPrice.MODIFY(TRUE);
+    end;
+
+    local procedure populateCustomSalesPriceFields(var SalesPrice: Record "Sales Price"; SalesPriceWorksheet: Record "Sales Price Worksheet")
+    var
+        Item: Record Item;
+    begin
+        /*New assignmets on 1) Existing Sales Price Line 2) Newly created Sales Price Line*/
+        SalesPriceWorksheet.CalcFields("Item Description", "Item Description 2");
+        SalesPrice.Description := SalesPriceWorksheet."Item Description";
+        SalesPrice."Description 2" := SalesPriceWorksheet."Item Description 2";
+        SalesPrice."New Price Calculation" := SalesPriceWorksheet."New Price Calculation";
+        case SalesPriceWorksheet."New Price Calculation" of
+            SalesPriceWorksheet."New Price Calculation"::"Unit Cost":
+                begin
+                    SalesPrice."Reference Cost" := SalesPriceWorksheet."Unit Cost";
+                    if Item.Get(SalesPriceWorksheet."Item No.") then
+                        SalesPrice."Cost Ref. Unit of Measure" := Item."Base Unit of Measure";
+                end;
+            SalesPriceWorksheet."New Price Calculation"::"Purchase Price":
+                begin
+                    SalesPrice."Reference Cost" := SalesPriceWorksheet."Purchase Price";
+                    SalesPrice."Cost Ref. Unit of Measure" := SalesPriceWorksheet."Purch. Unit of Measure";
+                end;
+            SalesPriceWorksheet."New Price Calculation"::Free:
+                begin
+                    SalesPrice."Reference Cost" := 0;
+                    SalesPrice."Cost Ref. Unit of Measure" := '';
+                end;
+        end;
     end;
 
     local procedure getMarginForRequisitionWorkSheet(var Rec: Record "Sales Price Worksheet")
